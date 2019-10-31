@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">reconbike</string>
+    <string name="version">1.0</string>
+    <string name="daum_api_key">1511824af8c8b96517186b5172a6c194</string>
+    <string name="tmap_api_key">61cbf8c0-ea58-3000-b3f0-55bd44f9fa29</string>
+    <string name="naver_client_id">uh8EpZXJEKSXyXN4BjTs</string>
+    <string name="naver_client_secret">Y0g11GnMx9</string>
+    <string name="google_client_id">809162423445-kqsb5grj4tf9mkqglfab90el6d22kguo.apps.googleusercontent.com</string>
+</resources>

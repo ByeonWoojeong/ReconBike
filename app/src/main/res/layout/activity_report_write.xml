@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/report_write"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고장 및 불편 신고"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#b9b9b9"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <app.cosmos.reconbike.SpinnerReselect
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:spinnerMode="dropdown"
+            android:scrollbars="none"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:id="@+id/type_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="19dp"
+                android:layout_gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:text="유형을 선택해 주세요."
+                android:id="@+id/type_text"
+                app:font="Custom2"
+                />
+
+            <ImageView
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:id="@+id/type_arrow"
+                android:background="@drawable/spinner_down"
+                />
+
+        </FrameLayout>
+        
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#b9b9b9"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/scrollView"
+        >
+        
+        <LinearLayout
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:lineSpacingExtra="10px"
+                android:padding="@null"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="내용을 입력해 주세요."
+                android:textColorHint="#b3b3b3"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:background="@null"
+                android:id="@+id/content"
+                app:font="Custom2"
+                />
+
+            <FrameLayout
+                android:layout_marginBottom="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/image_con0"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image0"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_close0"
+                    android:background="@drawable/img_close"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginBottom="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/image_con1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image1"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_close1"
+                    android:background="@drawable/img_close"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginBottom="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/image_con2"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image2"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_close2"
+                    android:background="@drawable/img_close"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginBottom="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/image_con3"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image3"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_close3"
+                    android:background="@drawable/img_close"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginBottom="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/image_con4"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image4"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_close4"
+                    android:background="@drawable/img_close"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        >
+
+        <View
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c3"
+            />
+
+        <ImageView
+            android:layout_marginLeft="11dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/camera"
+            android:background="@drawable/film"
+            />
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#f41758"
+            android:textSize="17sp"
+            android:text="접수"
+            android:id="@+id/next"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

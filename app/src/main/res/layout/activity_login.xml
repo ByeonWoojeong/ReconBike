@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <app.cosmos.reconbike.NPTextView
+            android:layout_marginTop="33dp"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            android:text="로그인"
+            app:font="Custom3"
+            />
+
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="59dp"
+            android:layout_width="221dp"
+            android:layout_height="41dp"
+            android:background="@drawable/id_password_back"
+            >
+
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="#c6c6c6"
+                android:hint="ID"
+                android:textColor="#212121"
+                android:textSize="15sp"
+                android:id="@+id/id"
+                app:font="Custom4"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:layout_width="221dp"
+            android:layout_height="41dp"
+            android:background="@drawable/id_password_back"
+            >
+
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="#c6c6c6"
+                android:hint="PW"
+                android:textColor="#212121"
+                android:textSize="15sp"
+                android:id="@+id/password"
+                app:font="Custom4"
+                />
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:background="@drawable/login"
+            android:id="@+id/login"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3c3c3c"
+                android:textSize="12sp"
+                android:text="아이디 찾기"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:id="@+id/id_get"
+                app:font="Custom2"
+                />
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="1px"
+                android:layout_height="11dp"
+                android:background="#121212"
+                />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3c3c3c"
+                android:textSize="12sp"
+                android:text="비밀번호 찾기"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:id="@+id/password_get"
+                app:font="Custom2"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginBottom="48dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="221dp"
+                android:layout_height="42dp"
+                android:background="@drawable/join"
+                android:id="@+id/join"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

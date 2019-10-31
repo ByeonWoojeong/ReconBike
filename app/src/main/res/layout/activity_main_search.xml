@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/main_search"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_marginRight="8dp"
+                android:paddingLeft="11dp"
+                android:padding="@null"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="장소 이름을 검색해주세요."
+                android:textColorHint="#b1b1b1"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:imeOptions="actionSearch"
+                android:background="@null"
+                android:maxLines="1"
+                android:id="@+id/search_text"
+                android:layout_weight="1"
+                app:font="Custom2"
+                />
+
+            <ImageView
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                android:layout_height="27dp"
+                android:background="@drawable/search_close"
+                android:id="@+id/search_close_btn"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search"
+                android:id="@+id/search_btn"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="31dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#212121"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:id="@+id/list_view_con"
+        android:visibility="gone"
+        >
+
+        <ListView
+            android:layout_margin="18dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_view"
+            android:groupIndicator="@null"
+            android:background="#ffffff"
+            android:dividerHeight="1px"
+            android:divider="#c3c3c3"
+            android:overScrollMode="never"
+            />
+
+        <View
+            android:layout_gravity="top"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c3"
+            />
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c3"
+            />
+
+        <View
+            android:layout_gravity="left"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#c3c3c3"
+            />
+
+        <View
+            android:layout_gravity="right"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#c3c3c3"
+            />
+        
+    </FrameLayout>
+
+</LinearLayout>

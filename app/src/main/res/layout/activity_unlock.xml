@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.cosmos.reconbike.UnlockActivity"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="463dp"
+            >
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/camera_view"
+                />
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="left|top"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:id="@+id/advice"
+                android:background="@drawable/advice"
+                />
+
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="right|top"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:id="@+id/back"
+                android:background="@drawable/report_back"
+                />
+
+            <FrameLayout
+                android:layout_marginTop="46dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_width="222dp"
+                android:layout_height="46dp"
+                android:background="@drawable/report_subtitle_round"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:text="자전거의 QR코드를 스캔해주세요."
+                    app:font="Custom1"
+                    />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="243dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/qr_field" />
+
+            <ImageView
+                android:layout_marginBottom="17dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="95dp"
+                android:layout_height="51dp"
+                android:background="@drawable/flashlight"
+                android:id="@+id/flashlight"
+                />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                style="@style/SpinKitView.Large.Circle"
+                android:id="@+id/spinKitView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:visibility="gone"
+                app:SpinKit_Color="#f41758" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:id="@+id/sub_title_con"
+            >
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:id="@+id/advice2"
+                android:background="@drawable/advice2"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b0b0b0"
+                android:textSize="14sp"
+                android:text="자전거의 일련번호를 입력해주세요."
+                android:id="@+id/sub_title"
+                app:font="Custom1"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#212121"
+        >
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="33dp"
+            android:layout_height="38dp"
+            android:id="@+id/call"
+            android:background="@drawable/call"
+            />
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1px"
+            android:layout_height="34dp"
+            android:background="#4dffffff" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/faq_con"
+            >
+
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f51e5d"
+                android:textSize="17sp"
+                android:text="자주 묻는 질문"
+                android:id="@+id/faq"
+                app:font="Custom1"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

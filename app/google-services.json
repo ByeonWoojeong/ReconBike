@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "376016922293",
+    "firebase_url": "https://android01-d2567.firebaseio.com",
+    "project_id": "android01-d2567",
+    "storage_bucket": "android01-d2567.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376016922293:android:d3a5e062cc964ec5",
+        "android_client_info": {
+          "package_name": "app.cosmos.reconbike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376016922293-dns6ljmnfd6lq6rn3mp938gturvuj40r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn8DgbTdpC7oTU2enieOpWzLuT9r3tPCU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="설정"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            app:font="Custom1" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cecece" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="#f8f8f8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="알림설정"
+                android:textColor="#9d9d9d"
+                android:textSize="13sp"
+                app:font="Custom2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/switch1_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="공지 알림"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/switch1_text"
+                    app:font="Custom2"
+                    />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    style="@style/SwitchButtonStyle"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="19dp"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbColor="#ffffff"
+                    android:id="@+id/switch1"
+                    android:visibility="gone"
+                   />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/switch2_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="전체 알림"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/switch2_text"
+                    app:font="Custom2"
+                    />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    style="@style/SwitchButtonStyle"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="19dp"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbColor="#ffffff"
+                    android:id="@+id/switch2"
+                    android:visibility="gone"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="일부 긴급 점검, 서비스 개선을 위한 공지 알림은 수신 동의와 상관 없이"
+                android:textColor="#9d9d9d"
+                android:textSize="10sp"
+                app:font="Custom2" />
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="발송 할 수 있습니다."
+                android:textColor="#9d9d9d"
+                android:textSize="10sp"
+                app:font="Custom2" />
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="버전"
+                android:textColor="#9d9d9d"
+                android:textSize="13sp"
+                app:font="Custom2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="@string/version"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    app:font="Custom4"
+                    />
+
+                <TextView
+                    android:layout_marginRight="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="현재 최신버전 사용중입니다."
+                    android:textColor="#f41758"
+                    android:textSize="13sp"
+                    app:font="Custom2"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="약관"
+                android:textColor="#9d9d9d"
+                android:textSize="13sp"
+                app:font="Custom2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/menu1_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="서비스 이용약관"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/menu1_text"
+                    app:font="Custom2"
+                    />
+
+                <ImageView
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="33dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/menu1"
+                    android:background="@drawable/setting_next"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/menu2_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="위치기반 서비스 이용약관"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/menu2_text"
+                    app:font="Custom2"
+                    />
+
+                <ImageView
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="33dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/menu2"
+                    android:background="@drawable/setting_next"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/menu3_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="개인정보 처리방침"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/menu3_text"
+                    app:font="Custom2"
+                    />
+
+                <ImageView
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="33dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/menu3"
+                    android:background="@drawable/setting_next"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/menu4_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="마케팅 서비스"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/menu4_text"
+                    app:font="Custom2"
+                    />
+
+                <ImageView
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="33dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/menu4"
+                    android:background="@drawable/setting_next"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="계정"
+                android:textColor="#9d9d9d"
+                android:textSize="13sp"
+                app:font="Custom2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/logout_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="로그아웃"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/logout"
+                    app:font="Custom2"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cecece" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#ffffff"
+                android:id="@+id/leave_con"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="탈퇴"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:id="@+id/leave"
+                    app:font="Custom2"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

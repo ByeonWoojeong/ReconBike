@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#212121"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/my_page"
+            android:background="@drawable/mypage"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="recon bike"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/title"
+            app:font="Custom3"
+            />
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="7dp"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:id="@+id/search_main"
+            android:background="@drawable/search_main"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#ccffffff"
+            android:id="@+id/sub_title_con"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41758"
+                    android:textSize="13sp"
+                    android:text="간편로그인"
+                    android:id="@+id/sub_title1"
+                    app:font="Custom3"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#787878"
+                    android:textSize="13sp"
+                    android:text="을 통해 서비스 이용이 가능합니다."
+                    android:id="@+id/sub_title2"
+                    app:font="Custom1"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="11dp"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/report"
+            android:background="@drawable/report"
+            />
+
+        <ImageView
+            android:layout_marginBottom="21dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="11dp"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/faq"
+            android:background="@drawable/faq"
+            />
+
+        <ImageView
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="11dp"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/refresh"
+            android:background="@drawable/refresh"
+            />
+
+        <ImageView
+            android:layout_marginBottom="21dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="11dp"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/gps"
+            android:background="@drawable/gps"
+            />
+
+        <ImageView
+            android:layout_marginBottom="21dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="122dp"
+            android:layout_height="52dp"
+            android:id="@+id/unlock"
+            android:background="@drawable/unlock"
+            android:visibility="invisible"
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.Large.Circle"
+            android:id="@+id/spinKitView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            app:SpinKit_Color="#f41758" />
+
+    </FrameLayout>
+
+</LinearLayout>

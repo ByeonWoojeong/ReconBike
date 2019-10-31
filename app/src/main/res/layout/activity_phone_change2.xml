@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="휴대폰 번호 변경"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            app:font="Custom1" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="변경하실 휴대폰 번호"
+                android:textColor="#8c8c8c"
+                android:textSize="13sp"
+                app:font="Custom1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:includeFontPadding="false"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingBottom="11dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="16dp"
+                        android:textColor="#212121"
+                        android:textSize="20sp"
+                        app:font="Custom5" />
+
+                    <TextView
+                        android:id="@+id/auth_number_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="인증번호"
+                        android:textColor="#f41758"
+                        android:textSize="13sp"
+                        android:gravity="center_vertical"
+                        app:font="Custom1" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/under_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="#212121" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical">
+
+            <app.cosmos.reconbike.NPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="인증번호"
+                android:textColor="#8c8c8c"
+                android:textSize="13sp"
+                app:font="Custom1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/auth_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:includeFontPadding="false"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingBottom="11dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="16dp"
+                        android:textColor="#212121"
+                        android:textSize="20sp"
+                        app:font="Custom5" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#f41758"
+                        android:textSize="13sp"
+                        android:visibility="gone"
+                        app:font="Custom4" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/under_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="#d7d7d7" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#212121"
+        android:id="@+id/next_con"
+        >
+
+        <TextView
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="7dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:text="확인"
+            android:id="@+id/next"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

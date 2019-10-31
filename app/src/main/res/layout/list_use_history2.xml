@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/use_history_bike"
+                    />
+
+                <app.cosmos.reconbike.NPTextView
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_gravity="bottom"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:id="@+id/device"
+                    app:font="Custom4"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/use_history_time"
+                    />
+
+                <app.cosmos.reconbike.NPTextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:id="@+id/time"
+                    app:font="Custom4"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="top|right"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:background="@drawable/use_history_type_back1"
+            android:id="@+id/type_con"
+            >
+
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:id="@+id/type"
+                app:font="Custom1"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cecece"
+        />
+
+</LinearLayout>

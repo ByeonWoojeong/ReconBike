@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <app.cosmos.reconbike.NPTextView
+            android:layout_marginTop="34dp"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="리콘바이크를 이용해주셔서 감사합니다."
+            app:font="Custom1"
+            />
+
+        <app.cosmos.reconbike.NPTextView
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#363636"
+            android:textSize="13sp"
+            android:text="간편 로그인을 이용하면"
+            app:font="Custom2"
+            />
+
+        <app.cosmos.reconbike.NPTextView
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#363636"
+            android:textSize="13sp"
+            android:text="빠르고 편리하게 서비스 이용이 가능합니다."
+            app:font="Custom2"
+            />
+
+        <ImageView
+            android:layout_marginTop="57dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:background="@drawable/naver_login"
+            android:id="@+id/naver_login"
+            />
+
+        <com.kakao.usermgmt.LoginButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/kakaotalk_login_original_btn"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:background="@drawable/kakao_login"
+            android:id="@+id/kakao_login"
+            />
+
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:background="@drawable/google_login"
+            android:id="@+id/google_login"
+            />
+
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:background="@drawable/nomal_login"
+            android:id="@+id/nomal_login"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3c3c3c"
+                android:textSize="12sp"
+                android:text="아이디 찾기"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:id="@+id/id_get"
+                app:font="Custom2"
+                />
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="1px"
+                android:layout_height="11dp"
+                android:background="#121212"
+                />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3c3c3c"
+                android:textSize="12sp"
+                android:text="비밀번호 찾기"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:id="@+id/password_get"
+                app:font="Custom2"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginBottom="48dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="221dp"
+                android:layout_height="42dp"
+                android:background="@drawable/join"
+                android:id="@+id/join"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

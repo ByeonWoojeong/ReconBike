@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="286dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_back">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <app.cosmos.reconbike.NPTextView
+            android:layout_marginTop="40dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:text="현재 남은 정액제 기간이 있습니다."
+            app:font="Custom2"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:text="회원탈퇴를 할 경우"
+            app:font="Custom2"
+            />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:text="해당 정액제 기간은 사라지며"
+            app:font="Custom2"
+            />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:text="복구되지 않습니다."
+            app:font="Custom2"
+            />
+
+        <TextView
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="39dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:text="정말로 탈퇴 하시겠습니까?"
+            app:font="Custom2"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_dialog_back2"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#212121"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:text="확인"
+                android:id="@+id/btn1"
+                app:font="Custom1"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:text="취소"
+                android:id="@+id/btn2"
+                app:font="Custom1"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        >
+
+        <ImageView
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:id="@+id/back"
+            android:background="@drawable/back_black"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:text="서비스 결제"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cecece"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="#f3f3f3"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cecece"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <ListView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:id="@+id/listView"
+            android:groupIndicator="@null"
+            android:background="#ffffff"
+            android:dividerHeight="1px"
+            android:divider="#cecece"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@drawable/billing_type_back_n"
+                android:id="@+id/phone_con"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/phone"
+                    android:background="@drawable/billing_phone"
+                    />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b9b9b9"
+                    android:textSize="11sp"
+                    android:text="휴대폰 결제"
+                    android:id="@+id/phone_text"
+                    app:font="Custom2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@drawable/billing_type_back_n"
+                android:id="@+id/card_con"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/card"
+                    android:background="@drawable/billing_card"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b9b9b9"
+                    android:textSize="11sp"
+                    android:text="카드 결제"
+                    android:id="@+id/card_text"
+                    app:font="Custom2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@drawable/billing_type_back_n"
+                android:id="@+id/wire_con"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="27dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="44dp"
+                    android:layout_height="33dp"
+                    android:id="@+id/wire"
+                    android:background="@drawable/billing_wire"
+                    />
+
+                <TextView
+                    android:layout_marginTop="9dp"
+                    android:layout_gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b9b9b9"
+                    android:textSize="11sp"
+                    android:text="계좌이체"
+                    android:id="@+id/wire_text"
+                    app:font="Custom2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#212121"
+        android:id="@+id/next_con"
+        >
+
+        <TextView
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:text="결제하기"
+            android:id="@+id/next"
+            app:font="Custom1"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
